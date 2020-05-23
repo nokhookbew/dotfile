@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,11 +71,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 
-alias vim="nvim"
-alias vi="nvim"
-alias oldvim="\vim"
-EDITOR="nvim"
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -104,27 +99,12 @@ EDITOR="nvim"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias l='exa -l'
 
-alias gladog='git log --all --decorate --oneline --graph'
-
-alias herokulog='heroku logs --tail --app'
-
-source /Users/Bewvy/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ${HOME}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # export PATH=`pwd`/flutter/bin:$PATH
 
-alias py='python3'
-alias mongoAdmin='mongo --username admin --password --authenticationDatabase admin'
-
-export PATH=$PATH:/Users/Bewvy/flutter/flutter/bin
-
-export PATH="/Users/Bewvy/anaconda3/bin:$PATH"
-
-export PATH=$PATH:/Users/Bewvy/.pub-cache/bin
-
-export PATH=$PATH:/usr/local/opt/rabbitmq/sbin
 # export PATH=[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin:$PATH
 # export PATH=/usr/local/bin:$PATH
 # source /usr/local/bin/virtualenvwrapper.sh
@@ -132,19 +112,3 @@ export PATH=$PATH:/usr/local/opt/rabbitmq/sbin
 # export WORKON_HOME=$HOME/.virtualenvsexport
 # PROJECT_HOME=$HOME/Develsource /usr/local/bin/virtualenvwrapper.sh
 
-export M2_HOME=/Users/Bewvy/apache-maven-3.6.1
-export PATH=$PATH:$M2_HOME/bin
-
-alias mysql="/usr/local/mysql-8.0.15-macos10.14-x86_64/bin/mysql -u root -p"
-alias jmeter="java -jar apache-jmeter-5.2.1/bin/ApacheJMeter.jar"
-
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-alias ctags="`brew --prefix`/bin/ctags"

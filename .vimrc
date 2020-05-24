@@ -433,6 +433,7 @@ Plug 'wadackel/vim-dogrun'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 call plug#end()
 
@@ -459,8 +460,10 @@ set background=dark
 "colorscheme dogrun
 "colorscheme solarized8_flat
 "colorscheme solarized8_dark_flat
-colorscheme dracula
+"colorscheme dracula
 "colorscheme wombat256
+colorscheme onehalfdard
+let g:airline_theme='onehalfdark'
 highlight Nomal guibg=black guifg=white
 
 

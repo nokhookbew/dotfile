@@ -166,7 +166,7 @@ function! NpmInstallAndUpdateRemotePlugins(info)
   !npm install
   UpdateRemotePlugins
 endfunction
-Plug 'neovim/node-host', { 'do': function('NpmInstallAndUpdateRemotePlugins') }
+" Plug 'neovim/node-host', { 'do': function('NpmInstallAndUpdateRemotePlugins') }
 " Plug 'vimlab/mdown.vim', { 'do': function('NpmInstallAndUpdateRemotePlugins') }
 
 """ Utilities #utilities
@@ -462,7 +462,7 @@ set background=dark
 "colorscheme solarized8_dark_flat
 "colorscheme dracula
 "colorscheme wombat256
-colorscheme onehalfdard
+colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 highlight Nomal guibg=black guifg=white
 

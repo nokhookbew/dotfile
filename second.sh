@@ -8,5 +8,8 @@ mv dotfile/.tmux.conf .
 mv dotfile/.vimrc .
 mv dotfile/.zshrc .
 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 source .zshrc
 

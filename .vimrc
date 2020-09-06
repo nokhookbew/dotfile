@@ -20,6 +20,7 @@ scriptencoding utf-8
 """""""""""""" Basics #basics
 """ Tabs #tabs
 " - Two spaces wide
+set autoread
 set tabstop=2
 set softtabstop=2
 " - Expand them all

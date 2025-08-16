@@ -72,7 +72,7 @@ set t_Co=256                    " Set if term supports 256 colors.
 set number
 let g:rehash256 = 1
 
-
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 """ Undo #undo
 " undofile - This allows you to use undos after exiting and restarting
